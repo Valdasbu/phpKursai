@@ -38,9 +38,7 @@
 
       if($sekme !== false){
         $sekmeMessage = "Formos duomenys įvesti teisingai!!! Žinutė išsiųsta. Susisieksime su Jumis per artimiausias tris darbo dienas.";
-      }
 
-      {
         $user = 'root';
         $pass = '';
 
