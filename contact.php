@@ -15,7 +15,7 @@
         $sekme=false;
       }
       elseif (!isValidName($_POST['fullname'])) {
-        $fullNamePranesimas = "Full name turi būti tik iš raidžių";
+        $fullNamePranesimas = "Full name neturi būti skaičių";
         $sekme=false;
       }
 

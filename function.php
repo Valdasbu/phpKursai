@@ -1,7 +1,7 @@
 <?php
 // $fullnamelArray =[];
 function isValidName( $fullname)  {
-  $regex = '/^[a-zA-Z]+$/iD';
+  $regex = '/^[^0-9]+$/iD';
   return (preg_match(   $regex,
                 $fullname)) ;
 }
