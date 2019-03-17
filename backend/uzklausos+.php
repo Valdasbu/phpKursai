@@ -1,5 +1,6 @@
 <?php
-require_once "backend/function.php";
+// require_once "backend/function.php";
+require_once "function.php";
 
 $db = connect();
 $dbIrasai = getAllMessages($db);
@@ -8,7 +9,7 @@ $dbIrasai = getAllMessages($db);
  <section class="team">
      <div class="containerTab">
         <div class="title">
-           <h2>Messages list</h2>
+           <h2>Pilnas Messagių listas</h2>
         </div>
 
         <div class="back">
@@ -42,7 +43,8 @@ $dbIrasai = getAllMessages($db);
                    <td><?=$irasas['email'];?></td>
                    <td><?=$irasas['sendmessage'];?></td>
                    <td><?=$irasas['date'];?></td>
-                   <td><a href="#">Trinti</a></td>
+                   <!-- <td><a href="#">Trinti</a></td> -->
+                   <td><a href="backend/delete.php?id=<?=$irasas['id'];?>">Trinti</a></td>
                  </tr>
                     <?php endforeach; ?>
                 </tbody>
